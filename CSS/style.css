@@ -11,10 +11,18 @@
     display: flex;
 }
 
+.col {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*********************************MAIN*********************************/
 
 .header{
-    background-color: black;
+    background-color: #000000;
     width: 100%;
     justify-content: flex-end;
     gap: 1rem;
@@ -23,7 +31,6 @@
 
 .speaker-view {
     background-color: rgba(129, 125, 125, 0.338);
-    color: white;
     font-size: small;
     height: 1.2rem;
     padding: 0.2rem;
@@ -35,7 +42,7 @@
 }
 
 .container-up {
-    background-color: #222222;
+    background-color: #000000;
     width: 100%;
     height: calc(100% - 4rem);
 }
@@ -47,17 +54,11 @@
     justify-content: center;
 }
 
-.container-down {
-    height: 4rem;
-    width: 100%;
-    background-color: #23272a;
-}
 
 .img {
     max-width: calc(100% / 7 - 0.5rem);
     max-height: 125px;
     position: relative;
-    /* margin-bottom:; */
 }
 
 .user-name {
@@ -65,8 +66,68 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
     font-size: small;
 }
 
+/* FOOTER */
 
+.container-down {
+    height: 4rem;
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+}
+
+.col {
+    padding: 0.5rem;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.icons {
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.icon-size {
+    font-size: 2rem;
+}
+
+.txt {
+    font-size: 0.7rem;
+}
+
+.fa-chevron-up {
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.center-arrow {
+    margin-left: 1rem;
+}
+
+.right {
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.close {
+    background-color: rgba(129, 125, 125, 0.338);
+    text-align: center;
+    width: 10rem;
+    height: 100%;
+    align-self: center;
+    padding: 1rem;
+}
