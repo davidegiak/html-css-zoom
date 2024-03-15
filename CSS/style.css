@@ -44,22 +44,29 @@ a {
 .container-up {
     background-color: #000000;
     width: 100%;
-    height: calc(100% - 4rem);
+    max-height: 100%;
 }
 
 .container-foto {
     width: 100%;
-    max-height: 90%;
+    max-height: 80%;
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
+    overflow: auto;
 }
 
 
 .img {
     max-width: calc(100% / 7 - 0.5rem);
     max-height: 125px;
-    position: relative;
+    position: relative;  
+}
+
+img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .user-name {
@@ -73,7 +80,7 @@ a {
 /* FOOTER */
 
 .container-down {
-    height: 4rem;
+    max-height: 20%;
     width: 100%;
     background-color: #222222;
     text-align: center;
@@ -143,4 +150,8 @@ a {
     font-size: 2.3rem;
     transition: 3ms;
     cursor: pointer;
+}
+
+main {
+    background-color: #222222;
 }
