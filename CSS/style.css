@@ -49,6 +49,7 @@ a {
 
 .container-foto {
     width: 100%;
+    max-height: 90%;
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
@@ -94,6 +95,7 @@ a {
     width: 50%;
     gap: 0.5rem;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 .icons {
@@ -130,4 +132,15 @@ a {
     height: 100%;
     align-self: center;
     padding: 1rem;
+}
+
+.fa-share-from-square {
+    color: #4bc800;
+}
+
+.fa-share-from-square:hover {
+    color: red;
+    font-size: 2.3rem;
+    transition: 3ms;
+    cursor: pointer;
 }
